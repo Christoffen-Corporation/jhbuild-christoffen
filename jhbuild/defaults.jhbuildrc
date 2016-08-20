@@ -213,7 +213,7 @@ jhbuildbot_dir = None
 jhbuildbot_mastercfg = "master.cfg"
 
 # whether to use a local copy of modulesets (instead of fetching them from svn)
-use_local_modulesets = False
+use_local_modulesets = True
 
 # whether to ignore soft dependencies
 ignore_suggests = False
