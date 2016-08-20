@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="yes"?> <!--*- mode: nxml -*-->
+<?xml-stylesheet type="text/xsl" href="moduleset.xsl"?>
+<moduleset>
+
+<metamodule id="meta-christoffen-wip">
+  <dependencies>
+    <dep package="logo-generator"/>
+    <dep package="asset-generator"/>
+  </dependencies>
+</metamodule>
+
+    <repository type="git" name="logo-generator"
+      href="https://github.com/Christoffen-Corporation/"/>
+    <repository type="git" name="asset-generator"
+      href="https://github.com/Christoffen-Corporation/"/>
+
+  <autotools id="logo-generator" autogen-sh="configure">
+    <branch repo="logo-generator" version="2.0.4" />
+  </autotools>
+
+  <autotools id="asset-generator" autogen-sh="configure">
+    <branch repo="asset-generator" version="2.0.4" />
+  </autotools>
+
+
+</moduleset>
+
+
